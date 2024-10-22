@@ -3,117 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hemalatha Gundlapalli Varalu Resume</title>
+    <title>Hemalatha Gundlapalli Varalu's Portfolio</title>
     <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            scroll-behavior: smooth;
         }
-        body, html {
-            height: 100%;
-            width: 100%;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #2d3436;
+            line-height: 1.7;
+            animation: fadeInBody 1.5s ease-in-out;
         }
-        .container {
-            width: 90%;
+
+        @keyframes fadeInBody {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            background: linear-gradient(135deg, #6c5ce7, #a363d9);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        section {
             max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 2.5rem auto;
+            padding: 2.5rem;
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
         }
-        h1 {
-            font-size: 28px;
-            text-align: center;
-            color: #333;
-            background-color: #f5ba13;
-            padding: 10px;
-            border-radius: 10px;
-            margin-bottom: 20px;
+
+        section:hover {
+            transform: translateY(-5px);
         }
+
         h2 {
-            font-size: 22px;
-            color: #333;
-            background-color: #17a2b8;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 15px;
+            color: #6c5ce7;
+            border-bottom: 3px solid #6c5ce7;
+            padding-bottom: 0.8rem;
+            margin-bottom: 2rem;
+            font-size: 2rem;
         }
-        p, ul {
-            color: #333;
-            line-height: 1.6;
+
+        .experience-item {
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #6c5ce7;
+            background-color: #f8f9fa;
+            border-radius: 0 10px 10px 0;
         }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .skill-category {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #6c5ce7;
+        }
+
         .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        a {
+            color: #6c5ce7;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #a363d9;
+        }
+
+        footer {
             text-align: center;
-            margin-bottom: 20px;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #6c5ce7, #a363d9);
+            color: white;
+            margin-top: 3rem;
         }
-        .contact-info p {
-            margin: 5px 0;
-        }
+
         ul {
             list-style-type: none;
             padding-left: 0;
         }
+
         ul li {
-            margin-bottom: 10px;
+            margin: 0.8rem 0;
+            padding-left: 1.5rem;
+            position: relative;
         }
-        .section {
-            margin-bottom: 25px;
-        }
-        strong {
-            color: #0056b3;
+
+        ul li::before {
+            content: "▹";
+            color: #6c5ce7;
+            position: absolute;
+            left: 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Hemalatha Gundlapalli Varalu</h1>
-        <div class="contact-info">
-            <p>Email: hemalathagv2512@gmail.com</p>
-            <p>Phone: +1 9452657775</p>
-        </div>
+<header>
+    <h1>Hemalatha Gundlapalli Varalu</h1>
+    <p>Information Technology & Data Analytics Professional</p>
+</header>
 
-        <div class="section">
-            <h2>Education</h2>
+<section>
+    <h2>Contact Information</h2>
+    <div class="contact-info">
+        <p>📍 Richardson, Texas, 75080</p>
+        <p>📞 945-265-7775</p>
+        <p>✉️ <a href="mailto:hxg220032@utdallas.edu">hxg220032@utdallas.edu</a></p>
+        <p>💼 <a href="https://www.linkedin.com/in/hemalatha-gv/" target="_blank">LinkedIn Profile</a></p>
+    </div>
+</section>
+
+<section>
+    <h2>Experience</h2>
+    <div class="experience-item">
+        <h3>Capgemini Technology Service Limited</h3>
+        <p>Analyst - Full time | June 2021 - January 2023 | Bangalore, India</p>
+        <ul>
+            <li>Utilized Excel, JIRA, Tableau, Python, R, and SQL for data analysis and reporting</li>
+            <li>Collaborated with cross-functional teams to deliver data-driven solutions</li>
+            <li>Implemented automation solutions using Python and R</li>
+        </ul>
+    </div>
+    <div class="experience-item">
+        <h3>The Sparks Foundation</h3>
+        <p>Data Analyst Intern | August 2020 - October 2020 | Remote</p>
+        <ul>
+            <li>Conducted data analysis using Python and Jupyter Notebook</li>
+            <li>Developed and implemented data visualization solutions</li>
+            <li>Participated in team projects and presentations</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <ul>
+        <li><strong>The University of Texas at Dallas</strong><br>
+            Master of Science, Information Technology and Management<br>
+            Jan 2022 – Dec 2024 | GPA: 3.5</li>
+        <li><strong>Saveetha School of Engineering, Chennai</strong><br>
+            Bachelor of Science, Computer Science and Engineering<br>
+            August 2017 – October 2021</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Certifications & Technical Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>Certifications</h3>
             <ul>
-                <li><strong>The University of Texas at Dallas</strong> – M.S., Information Technology and Management (Expected: December 2024)</li>
-                <li><strong>Saveetha School of Engineering, Chennai</strong> – Bachelor of Science, Computer Science and Engineering (October 2021)</li>
+                <li>AWS Cloud Practitioner</li>
+                <li>Microsoft Azure AZ 900 Fundamentals</li>
             </ul>
         </div>
-
-        <div class="section">
-            <h2>Certifications & Technical Skills</h2>
+        <div class="skill-category">
+            <h3>Languages</h3>
             <ul>
-                <li><strong>Certifications</strong>: AWS Cloud Practitioner, Microsoft Azure AZ 900 Fundamentals</li>
-                <li><strong>Languages</strong>: Python, SQL, R Programming, MySQL, PostgreSQL</li>
-                <li><strong>Tools & Technologies</strong>: Tableau, Power BI, Jupyter Notebook, R Studio, MS Excel, PowerPoint, Microsoft SharePoint, Google Analytics, Git, JIRA, SDLC, Agile, Tableau Prep, Predictive and Prescriptive Analytics, IBM Cognos Analytics</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>R Programming</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
             </ul>
         </div>
-
-        <div class="section">
-            <h2>Experience</h2>
+        <div class="skill-category">
+            <h3>Tools & Technologies</h3>
             <ul>
-                <li><strong>Capgemini Technology Service Limited, Bangalore, India</strong> – Analyst (June 2021 - January 2023)
-                    <ul>
-                        <li>Worked with Excel, Jira, Tableau, Python, R, SQL for various analysis and reporting tasks.</li>
-                    </ul>
-                </li>
-                <li><strong>The Sparks Foundation, Remote</strong> – Data Analyst Intern (August 2020 - October 2020)
-                    <ul>
-                        <li>Used Python and Jupyter Notebook for data analysis projects.</li>
-                    </ul>
-                </li>
+                <li>Tableau, Power BI</li>
+                <li>Jupyter Notebook, RStudio</li>
+                <li>MS Excel, PowerPoint</li>
+                <li>Microsoft SharePoint</li>
+                <li>Google Analytics</li>
+                <li>Git, JIRA</li>
+                <li>SDLC, Agile</li>
+                <li>Tableau Prep</li>
+                <li>Predictive and Prescriptive Analytics</li>
+                <li>IBM Cognos Analytics</li>
             </ul>
         </div>
     </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <ul>
+        <li><a href="#" target="_blank">Data Analysis Dashboard - Customer Segmentation</a></li>
+        <li><a href="#" target="_blank">Predictive Analytics - Sales Forecasting</a></li>
+        <li><a href="#" target="_blank">Business Intelligence Reporting System</a></li>
+        <li><a href="#" target="_blank">ETL Pipeline Development</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 Hemalatha Gundlapalli Varalu. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
