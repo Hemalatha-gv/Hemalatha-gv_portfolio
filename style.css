@@ -305,7 +305,7 @@
         }
 
         body {
-            background-color: #f5f5f5;
+            background-color: #fafafa;  
             padding: 2rem;
             line-height: 1.6;
         }
@@ -322,9 +322,9 @@
 
         .section-header {
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.5rem;  
             color: #2d3748;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;  
             font-weight: bold;
             position: relative;
         }
@@ -332,10 +332,10 @@
         .section-header::after {
             content: '';
             display: block;
-            width: 60px;
-            height: 3px;
+            width: 50px;  
+            height: 2px;  
             background-color: #3182ce;
-            margin: 0.5rem auto;
+            margin: 0.4rem auto;
         }
 
         .timeline-container {
@@ -359,8 +359,8 @@
         }
 
         .timeline-dot {
-            width: 16px;
-            height: 16px;
+            width: 12px;  
+            height: 12px;  
             border-radius: 50%;
             margin-right: 2rem;
             margin-top: 8px;
@@ -377,10 +377,10 @@
         }
 
         .timeline-content {
-            background-color: white;
+            background-color: #ffffff;
             border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.25rem;  
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);  
             flex-grow: 1;
             margin-left: 1rem;
             transition: transform 0.2s ease;
@@ -391,27 +391,29 @@
         }
 
         .timeline-title {
-            font-size: 1.25rem;
+            font-size: 1.1rem;  
             font-weight: 600;
             color: #2d3748;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         }
 
         .timeline-organization {
             color: #4a5568;
             margin-bottom: 0.25rem;
             font-weight: 500;
+            font-size: 0.95rem;  
         }
 
         .timeline-date {
             color: #718096;
-            font-size: 0.875rem;
-            margin-bottom: 0.5rem;
+            font-size: 0.8rem;  
+            margin-bottom: 0.4rem;
         }
 
         .timeline-description {
             color: #4a5568;
-            margin-top: 0.5rem;
+            margin-top: 0.4rem;
+            font-size: 0.9rem; 
         }
 
         @media (max-width: 640px) {
@@ -424,12 +426,17 @@
             }
             
             .timeline-dot {
-                width: 12px;
-                height: 12px;
+                width: 10px; 
+                height: 10px;  
                 margin-right: 1rem;
+            }
+
+            .section-header {
+                font-size: 1.3rem; 
             }
         }
     </style>
+
       <style>
       /* Enhanced styles for resume display */
       .resume-section {
