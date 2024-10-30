@@ -1,5 +1,5 @@
  <style>
-         {
+       * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -203,260 +203,260 @@
     </style>
 
     <style>
-.about-section {
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(145deg, rgba(255,255,255,0.95), rgba(255,255,255,0.8));
-    border: 1px solid rgba(255,255,255,0.3);
-}
+          .about-section {
+          position: relative;
+          overflow: hidden;
+          background: linear-gradient(145deg, rgba(255,255,255,0.95), rgba(255,255,255,0.8));
+          border: 1px solid rgba(255,255,255,0.3);
+         }
 
-.about-content {
-    position: relative;
-    z-index: 2;
-}
+     .about-content {
+             position: relative;
+              z-index: 2;
+       }
 
-.about-text {
-    max-width: 800px;
-    margin: 0 auto;
-}
+    .about-text {
+             max-width: 800px;
+             margin: 0 auto;
+         }
 
-.about-intro {
-    font-size: 1.2rem;
-    color: #1a1a2e;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-    padding-left: 1rem;
-    border-left: 3px solid #1a1a2e;
-    transition: all 0.3s ease;
-}
-
-.about-intro:hover {
-    transform: translateX(5px);
-}
-
-.about-details p {
-    margin-bottom: 1rem;
-    line-height: 1.7;
-    color: #2d3436;
-    font-size: 0.95rem;
-}
-
-.about-highlights {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(26, 26, 46, 0.1);
-}
-
-.highlight-item {
-    text-align: center;
-    padding: 1rem;
-    background: rgba(255,255,255,0.7);
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.highlight-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.highlight-number {
-    display: block;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #1a1a2e;
-    margin-bottom: 0.5rem;
-}
-
-.highlight-label {
-    font-size: 0.9rem;
-    color: #666;
-    display: block;
-}
-
-@media (max-width: 768px) {
     .about-intro {
-        font-size: 1.1rem;
-    }
-    
-    .about-highlights {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 1rem;
-    }
-    
-    .highlight-number {
-        font-size: 1.5rem;
-    }
-    
-    .highlight-label {
-        font-size: 0.8rem;
-    }
-}
-</style>
-<style>
-/* Enhanced styles for resume display */
-.resume-section {
-    max-width: 1100px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
+           font-size: 1.2rem;
+           color: #1a1a2e;
+           font-weight: 500;
+           margin-bottom: 1.5rem;
+           padding-left: 1rem;
+           border-left: 3px solid #1a1a2e;
+           transition: all 0.3s ease;
+        }
 
-.resume-header {
-    text-align: center;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid rgba(26, 26, 46, 0.1);
-}
-
-.resume-header h1 {
-    font-size: 1.8rem;
-    color: #1a1a2e;
-    margin-bottom: 0.5rem;
-}
-
-.contact-details {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.contact-details a {
-    color: #1a1a2e;
-    text-decoration: none;
-}
-
-.education-item {
-    margin-bottom: 1.5rem;
-}
-
-.education-item h4 {
-    color: #1a1a2e;
-    font-size: 1.1rem;
-    margin-bottom: 0.3rem;
-}
-
-.degree {
-    color: #2d3436;
-    font-size: 0.95rem;
-    margin-bottom: 0.2rem;
-}
-
-.date {
-    color: #666;
-    font-size: 0.9rem;
-}
-
-@media print {
-    .resume-buttons {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .resume-section {
-        padding: 1rem;
-        margin: 1rem;
-    }
-
-    .resume-header h1 {
-        font-size: 1.5rem;
-    }
-}
-</style>
-
-<style>
-.timeline {
-    list-style: none;
-    padding: 20px 0 20px;
-    position: relative;
-}
-.timeline:before {
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 3px;
-    background-color: #e9ecef;
-    left: 50%;
-    margin-left: -1.5px;
-}
-.timeline > li {
-    margin-bottom: 20px;
-    position: relative;
-}
-.timeline > li:before,
-.timeline > li:after {
-    content: " ";
-    display: table;
-}
-.timeline > li:after {
-    clear: both;
-}
-.timeline > li > .timeline-panel {
-    width: 46%;
-    float: left;
-    border: 1px solid #d4d4d4;
-    border-radius: 4px;
-    padding: 20px;
-    position: relative;
-    background: white;
-}
-.timeline > li.timeline-inverted > .timeline-panel {
-    float: right;
-}
-.timeline-badge {
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-    text-align: center;
-    position: absolute;
-    top: 16px;
-    left: 50%;
-    margin-left: -25px;
-    background-color: #999999;
-    z-index: 100;
-    border-radius: 50%;
-}
-.timeline-title {
-    margin-top: 0;
-    color: #333;
-}
-.timeline-body > p {
-    margin-bottom: 0;
-}
-.timeline-heading h3 {
-    margin: 0;
-    font-size: 20px;
-}
-.company {
-    display: block;
-    margin-top: 6px;
-    color: #666;
-}
-.animate-box {
-    opacity: 1;
-}
-</style>
-<style>
-    /* Add to existing styles */
-    .project-description {
-        font-size: 0.9rem;
-        color: #666;
-        margin-left: 1.5rem;
-        margin-top: 0.25rem;
-        margin-bottom: 1rem;
+         .about-intro:hover {
+             transform: translateX(5px);
+         }
+         
+         .about-details p {
+             margin-bottom: 1rem;
+             line-height: 1.7;
+             color: #2d3436;
+             font-size: 0.95rem;
+         }
+         
+         .about-highlights {
+             display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+             gap: 1.5rem;
+             margin-top: 2rem;
+             padding-top: 2rem;
+             border-top: 1px solid rgba(26, 26, 46, 0.1);
+         }
+         
+         .highlight-item {
+             text-align: center;
+             padding: 1rem;
+             background: rgba(255,255,255,0.7);
+             border-radius: 8px;
+             transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         
+         .highlight-item:hover {
+             transform: translateY(-5px);
+             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+         }
+         
+         .highlight-number {
+             display: block;
+             font-size: 1.8rem;
+             font-weight: 600;
+             color: #1a1a2e;
+             margin-bottom: 0.5rem;
+         }
+         
+         .highlight-label {
+             font-size: 0.9rem;
+             color: #666;
+             display: block;
+         }
+         
+         @media (max-width: 768px) {
+             .about-intro {
+                 font-size: 1.1rem;
+             }
+             
+             .about-highlights {
+              grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+              gap: 1rem;
+          }
+          
+          .highlight-number {
+              font-size: 1.5rem;
+          }
+          
+          .highlight-label {
+              font-size: 0.8rem;
+          }
+      }
+      </style>
+      <style>
+      /* Enhanced styles for resume display */
+      .resume-section {
+          max-width: 1100px;
+          margin: 2rem auto;
+          padding: 2rem;
+          background: white;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      }
+      
+      .resume-header {
+          text-align: center;
+          margin-bottom: 2rem;
+          padding-bottom: 1rem;
+          border-bottom: 2px solid rgba(26, 26, 46, 0.1);
+      }
+      
+      .resume-header h1 {
+          font-size: 1.8rem;
+          color: #1a1a2e;
+          margin-bottom: 0.5rem;
+      }
+      
+      .contact-details {
+       font-size: 0.9rem;
+       color: #666;
+   }
+   
+   .contact-details a {
+       color: #1a1a2e;
+       text-decoration: none;
+   }
+   
+    .education-item {
+       margin-bottom: 1.5rem;
+   }
+   
+   .education-item h4 {
+       color: #1a1a2e;
+       font-size: 1.1rem;
+       margin-bottom: 0.3rem;
+   }
+   
+      .degree {
+          color: #2d3436;
+          font-size: 0.95rem;
+       margin-bottom: 0.2rem;
+   }
+   
+   .date {
+       color: #666;
+       font-size: 0.9rem;
+   }
+   
+   @media print {
+       .resume-buttons {
+           display: none;
+       }
+   }
+   
+   @media (max-width: 768px) {
+       .resume-section {
+           padding: 1rem;
+           margin: 1rem;
     }
 
-    section ul li a {
-        display: inline-block;
-        margin-bottom: 0.25rem;
+       .resume-header h1 {
+           font-size: 1.5rem;
+       }
+   }
+   </style>
+
+    <style>
+    .timeline {
+        list-style: none;
+        padding: 20px 0 20px;
+        position: relative;
+    }
+    .timeline:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: #e9ecef;
+        left: 50%;
+        margin-left: -1.5px;
+       }
+       .timeline > li {
+           margin-bottom: 20px;
+           position: relative;
+   }
+   .timeline > li:before,
+   .timeline > li:after {
+       content: " ";
+       display: table;
+   }
+   .timeline > li:after {
+       clear: both;
+   }
+   .timeline > li > .timeline-panel {
+       width: 46%;
+       float: left;
+       border: 1px solid #d4d4d4;
+       border-radius: 4px;
+       padding: 20px;
+       position: relative;
+       background: white;
+   }
+   .timeline > li.timeline-inverted > .timeline-panel {
+       float: right;
+   }
+   .timeline-badge {
+       color: #fff;
+       width: 50px;
+       height: 50px;
+       line-height: 50px;
+       font-size: 1.4em;
+       text-align: center;
+       position: absolute;
+       top: 16px;
+       left: 50%;
+       margin-left: -25px;
+       background-color: #999999;
+       z-index: 100;
+       border-radius: 50%;
+   }
+   .timeline-title {
+       margin-top: 0;
+       color: #333;
+   }
+   .timeline-body > p {
+       margin-bottom: 0;
+   }
+   .timeline-heading h3 {
+       margin: 0;
+       font-size: 20px;
+   }
+   .company {
+       display: block;
+       margin-top: 6px;
+       color: #666;
+      }
+      .animate-box {
+          opacity: 1;
+      }
+   </style>
+   <style>
+       /* Add to existing styles */
+       .project-description {
+           font-size: 0.9rem;
+           color: #666;
+           margin-left: 1.5rem;
+           margin-top: 0.25rem;
+           margin-bottom: 1rem;
+       }
+   
+       section ul li a {
+           display: inline-block;
+           margin-bottom: 0.25rem;
         font-size: 1.1rem;
     }
 
@@ -467,4 +467,4 @@
     section ul li:last-child {
         margin-bottom: 0;
     }
-</style>
+   </style>
